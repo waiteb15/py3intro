@@ -1,0 +1,12 @@
+full_name = input("PLEASE ENTER YOUR FULL NAME!:")
+
+print(full_name)
+print(f"capitalized full name: {full_name.upper()}")
+print(full_name.title())
+print(full_name.count('j'))
+print(len(full_name))
+print(full_name.find('jacob'))
+print(full_name.index('jacob'))
+new_name=full_name.lower()
+split_name=new_name.split()
+print(split_name.index("jacob"))

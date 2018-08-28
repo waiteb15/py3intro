@@ -1,7 +1,5 @@
 #!/usr/bin/env python
-
 import sys
-
 
 if len(sys.argv) == 2:
     high_limit = int(sys.argv[1])

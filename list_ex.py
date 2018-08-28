@@ -57,10 +57,11 @@ print(movie_star[8:11])
 print(movie_star[8::2])
 
 print(colors,'\n')
+
 #for VAR in Iterable
 # list, tuple, string, set, dictionary
-
 for dummy in colors:
     print(dummy + ' a aa')
-
 print(dummy)
+#
+

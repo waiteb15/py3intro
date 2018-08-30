@@ -3,7 +3,7 @@ from tempconv import c2f, f2c
 
 while True:
    usrtemp = input("Enter a Temperature Value with unit separated by a space:(or q for quit)").split(' ')
-   if usrtemp == 'q':
+   if usrtemp[0] == 'q':
        break
    try:
         temp = float(usrtemp[0])
@@ -19,7 +19,7 @@ while True:
        temp = float(temp)
        fahrenheit_temp = f2c(temp)
        print(f"Temperature in Celsius is: {fahrenheit_temp:.2f}")
-   else
+   else:
        print('Enter F or C')
    continue
 

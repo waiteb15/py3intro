@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
 
-import KAPL_UTIL as ku
+from KAPL_UTIL import spam, ham
 
-ku.spam()
-ku.ham()
+spam()
+ham()
 
 # DON't do this, its supposed to be private...ssshhhh!
 #KAPL_UTIL._eggs()

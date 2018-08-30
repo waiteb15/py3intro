@@ -11,3 +11,7 @@ print()
 # sort by value
 for color, num in sorted(count_of.items(), key=lambda e: e[1]): # <2>
     print(color, num)
+
+
+
+

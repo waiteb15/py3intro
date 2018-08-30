@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
-def add(arg1, arg2 ):
+def add(arg1, arg2):
     val = float(arg1) + float(arg2)
     return val
 
-def subtract(arg1, arg2 ):
+def subtract(arg1, arg2):
     val = float(arg1) - float(arg2)
     return val
 
@@ -16,14 +16,13 @@ def divide(arg1, arg2):
         val = float(arg1) / float(arg2)
         return val
 
-def multiply(arg1, arg2 ):
+def multiply(arg1, arg2):
     val = float(arg1) * float(arg2)
     return val
 
-def exponent(arg1, arg2 ):
+def exponent(arg1, arg2):
     val = float(arg1) ** float(arg2)
     return val
-
 
 while True:
     user_value = input("Enter a math expression( ex. '9 + 4' make sure you seperate by whitespace)(q for quit):")

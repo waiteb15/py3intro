@@ -3,7 +3,12 @@
 from pprint import pprint
 FILE_NAME='DATA/knights.txt'
 
-def read_data{file_name}
+def read_data(file_name)
+    """
+    
+    :param file_name: 
+    :return: 
+    """
     data = {}
     with open(file_name) as knights_in:
         for raw_line in knights_in:

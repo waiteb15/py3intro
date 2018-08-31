@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #    module           class
 from carddeck import CardDeck
-
+from joker_deck import JokerDeck
 #creates an instance of the class
 
 d1 = CardDeck("Scotty")
@@ -39,4 +39,8 @@ print(b)
 b.shuffle()
 print(b.deal())
 
-
+print("-"*60)
+j1 = JokerDeck('Laura')
+j1.shuffle()
+print(j1.deal())
+print(len(j1))

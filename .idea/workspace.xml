@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c439e47b-5df8-4249-9086-1a7adfc16b8d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alt_sorted.py" afterPath="$PROJECT_DIR$/alt_sorted.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/word_freq.py" afterPath="$PROJECT_DIR$/word_freq.py" />
     </list>
     <ignored path=".idea/misc.xml" />
@@ -35,8 +33,8 @@
       <file leaf-file-name="word_freq.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/word_freq.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="144">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="e#22#31#0" expanded="true" />
               </folding>
@@ -266,7 +264,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mark_big_words">
+  <component name="RunManager" selected="Python.word_freq">
     <configuration default="false" name="regex_sub_callback" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -431,8 +429,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.mark_big_words" />
-        <item index="1" class="java.lang.String" itemvalue="Python.word_freq" />
+        <item index="0" class="java.lang.String" itemvalue="Python.word_freq" />
+        <item index="1" class="java.lang.String" itemvalue="Python.mark_big_words" />
         <item index="2" class="java.lang.String" itemvalue="Python.alt_sorted" />
         <item index="3" class="java.lang.String" itemvalue="Python.print_numbers" />
         <item index="4" class="java.lang.String" itemvalue="Python.regex_sub_callback" />
@@ -924,8 +922,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/word_freq.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="e#22#31#0" expanded="true" />
           </folding>

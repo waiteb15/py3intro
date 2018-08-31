@@ -2,6 +2,10 @@
 a_list = []
 b_list = []
 
+
+
+
+
 with open('DATA/alt.txt') as alt_in:
     for raw_line in alt_in:
          line = raw_line.strip()

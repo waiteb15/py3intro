@@ -8,12 +8,12 @@ class Rabbit:
         
     def display(self):
         print("This rabbit guarding {} uses {} as a weapon".
-              format(self.LOCATION, self.weapon))
+              format(self.LOCATION, self.weapon))  # <2>
 
-    @classmethod # <2>
-    def get_location(cls):  # <3>
-        return cls.LOCATION   # <4>
+    @classmethod # <3>
+    def get_location(cls):  # <4>
+        return cls.LOCATION   # <5>
 
 r = Rabbit("a nice cup of tea")
-print(Rabbit.get_location()) # <5>
-print(r.get_location())  # <6>
+print(Rabbit.get_location()) # <6>
+print(r.get_location())  # <7>

@@ -1,18 +1,1 @@
-Anger, Darol        95
-Brown, Alison       45
-Burns, Jethro       86
-Bush, Sam           87
-Fleck, Bela         88
-Klein, Moondi       81
-Marshall, Mike      56
-McMasters, Natalie  97
-Monroe, Bill        88
-Nevins, Tara        72
-O'Brien, Tim        92
-Phillips, Todd      98
-Rice, Tony          77
-Rowan, Peter        95
-Scott, Darrel       91
-Thile, Chris        76
-Watson, Doc         91
-Wooten, Victor      99
+Darol                Anger                95Alison               Brown                45Jethro               Burns                86Sam                  Bush                 87Bela                 Fleck                88Moondi               Klein                81Mike                 Marshall             56Natalie              McMasters            97Bill                 Monroe               88Tara                 Nevins               72Tim                  O'Brien              92Todd                 Phillips             98Tony                 Rice                 77Peter                Rowan                95Darrel               Scott                91Chris                Thile                76Doc                  Watson               91Victor               Wooten               99

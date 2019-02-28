@@ -1,8 +1,8 @@
 watermelon
 Kiwi
-mango
 Apple
 raspberry
+Nectarine
 kumquat
 orange
 Lime
@@ -12,9 +12,7 @@ Tangerine
 pineapple
 Cantelope
 honeydew
-peach
 grape
-cherry
 Plum
 nectarine
 Apricot

@@ -1,14 +1,16 @@
 #!/usr/bin/env python
 import re
 
-rx_code = re.compile(r'(?P<bigword>\b[A-Z]{8,}\b)', re.I)
+input_file_name = 'DATA/parrot.txt'
+output_file_name = 'bigwords.txt'
 
-def update_code(m):
-    word = m.group('bigword')
-    return f'*{word}*'
+pattern = r'\w{8,}'
 
-with open('DATA/parrot.txt') as parrot_in:
-    with open('bigwords.txt','w') as bigwords_out:
-        for line in parrot_in:
-            line2 = rx_code.sub(update_code, line)
-            bigwords_out.write(line2)
+def doit(m):
+    return f"**{m.group(0)}**"
+
+with open(input_file_name) as parrot_in:
+    with open(output_file_name, 'w') as bigwords_out:
+        text = parrot_in.read()
+        new_text = re.sub(pattern, doit, text)
+        bigwords_out.write(new_text)

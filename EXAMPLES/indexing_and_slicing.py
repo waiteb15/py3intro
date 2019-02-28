@@ -2,7 +2,7 @@
 
 pythons = [ "Idle", "Cleese", "Chapman", "Gilliam", "Palin", "Jones"]
 
-characters = ("Roger", "Old Woman", "Prince Herbert", "Brother Maynard")
+characters = "Roger", "Old Woman", "Prince Herbert", "Brother Maynard"
 
 phrase = "She turned me into a newt"
 

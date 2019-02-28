@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 import smtplib
 import os
 from email.mime.multipart import MIMEMultipart  # <1>
@@ -32,12 +31,12 @@ def create_message(subject, body):
     return msg
 
 def add_text_attachment(file_name, message): # <7>
-    add_attachment(file_name, message)
+    add_attachment(file_name, message, MIMEText, 'r')
 
 def add_image_attachment(file_name, message): # <8>
     add_attachment(file_name, message, MIMEImage, 'rb')
 
-def add_attachment(file_name, message, mime_type=MIMEText, file_mode="r"):
+def add_attachment(file_name, message, mime_type, file_mode):
     with open(file_name, file_mode) as file_in:  # <9>
         attachment_data = file_in.read()
 

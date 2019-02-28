@@ -10,9 +10,10 @@ voluptate velit esse cillum dolore U901 eu fugiat nulla pariatur.
 Excepteur sint occaecat A110 cupidatat non proident, sunt in H332 culpa qui 
 officia deserunt Y45 mollit anim id est laborum"""
 
-rx_code = re.compile(r'[A-Z]\d{2,3}', re.I)  # <1>
+rx_code = re.compile(r'  [A-Z]   \d{2,3}', re.I | re.X)  # <1>
 
-if rx_code.search(s):  # <2>
+if rx_code.search(s):  # <2>  # re.search(pattern, text)
+                              # rxobj.search(text)
     print("Found pattern.")  
 print()
 
@@ -27,4 +28,36 @@ print()
 
 matches = rx_code.findall(s)
 print("matches:",  matches)
-    
+print()
+
+t = """
+blah blah blah
+blah blah 
+blah
+Wombat Tractor Penny Argyle Foo Bar Blah
+1      2       3     4      5   6   7
+1      2       3     4      5   6   7
+1      2       3     4      5   6   7
+Gila Monster
+blah blah blha blah blah
+blah blah
+"""
+
+heading = "Wombat Tractor Penny Argyle Foo Bar Blah"
+
+pattern = "Wombat Tractor Penny Argyle Foo Bar Blah\n(.*)\nGila Monster"
+
+m = re.search(pattern, t, re.S)
+if m:
+    print(m.group(1))
+    rows = [[float(n) for n in r.split()] for r in m.group(1).splitlines()]
+    print(rows)
+
+
+
+
+
+
+
+
+

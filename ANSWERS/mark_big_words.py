@@ -2,7 +2,7 @@
 
 import re
 
-rx_longword = re.compile(r"\b[a-z]{8, }\b", re.I)
+rx_longword = re.compile(r"\b[a-z]{8,}\b", re.I)
 
 
 def mark_word(m):

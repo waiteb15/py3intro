@@ -11,5 +11,5 @@ with open("../DATA/presidents.txt", "r") as PRES:
 
 # sort by lname, fname
 for fields in sorted(all_pres, key=lambda e: (e[1], e[2])):
-    print(fields[2], fields[1], fields[10])
+    print(fields[2], fields[1], fields[6])
 

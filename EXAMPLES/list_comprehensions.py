@@ -15,7 +15,7 @@ doubles = [v * 2 for v in values]   # <3>
 
 print("doubles:", doubles, '\n')
 
-nums = [int(s) for s in values if isinstance(s, int)]   # <4>
+nums = [x for x in values if isinstance(x, int)]   # <4>
 print(nums, '\n')
 
 dirty_strings = ['   Gronk    ', 'PULABA       ', '        floog']

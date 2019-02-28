@@ -1,15 +1,16 @@
 #!/usr/bin/env python
 """
-COMMENTS - Documentation String
+String examples for my excellent students
 """
+
 
 s1 = "spam\n"
 s2 = 'spam\n'
-s3 ="""spam\n"""
-s4 ='''spam\n'''
-s5= r"spam\n"
-x=5
-s6 = f"Ive got {x} problems"
+s3 = """spam\n"""
+s4 = '''spam\n'''
+s5 = r"spam\n"
+x = 5
+s6 = f"I've got {x} problems"
 
 
 print(s4)
@@ -18,14 +19,35 @@ print(s6)
 print("It's a trap!")
 print("The 'rose' garden")
 
-print('''the 'rose' "garden" ''')
 
-y=6
+print('''The 'rose' "garden"''')
 
-print("I have {} problems but {} answers".format(x,y))
 
-#supports unicode
-degrees = "\u00b0"
-print("it will be 90\u00B0 in albany this week")
+# legacy formatting
+x = 5
+print("I have %s problems" % (x))
 
-print(f"it will be 90{degrees} in albany this week")
+# modern
+print("I have {} problems".format(x))
+
+# f-strings VERY modern (hotness)
+print(f"I have {x} problems")
+
+get_customers_from_omaha = """
+select *
+from customers
+where city = "Omaha"
+"""
+
+degrees = "\u00B0"
+print(f"It will be 90{degrees} in Albany this week")
+
+
+
+
+
+
+
+
+
+

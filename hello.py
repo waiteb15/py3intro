@@ -1,4 +1,1 @@
-#!/usr/bin/env python
-print("hello, worlds")
-
-
+print("Hello, world")

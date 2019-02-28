@@ -2,21 +2,19 @@
 import re
 import sys
 
-all_words={}
-file_name = sys.argv[1]
+pattern = r"[^a-z']+"
 
-rx_wordsep = re.compile(r"[^\w']+")
+counts = {}
 
-with open(file_name) as file_in:
-    for line in file_in:
-        words = rx_wordsep.split(line.strip())
-        for word in words:
-            if word == '' or word == "'":
-                continue
-            all_words[word.lower()] = all_words.get(word.lower(),0) + 1
+for file_name in sys.argv[1:]:
+    with open(file_name) as file_in:
+        text = file_in.read()
+        all_words = re.split(pattern, text.lower())
+        # print(all_words)
+        for word in all_words:
+            if word not in counts:
+                counts[word] = 0
+            counts[word] = counts[word] + 1
 
-
-for word, count in sorted(all_words.items()):
-    print(f"{word}:{count}")
-
-
+for word, count in sorted(counts.items(), key=lambda e:(e[1], e[0])):
+    print(word, count)

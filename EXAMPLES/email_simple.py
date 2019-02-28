@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 import smtplib # <1>
 
 DEBUG = True # set to false for production

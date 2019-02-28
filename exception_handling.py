@@ -2,39 +2,24 @@
 
 x = 23.45
 
-vals = [5.9,4.8,3.6,0,5.1,7.2, 'dumb']
+values = [5.9, 4.8, 3.6, 0, 5.1, 7.2, 'wombat']
 
-print('-'*60)
-for v in vals:
+for v in values:
     try:
         result = x / v
-        print(result)
-    except (ZeroDivisionError,TypeError) as err:
-        print(err)
-print('-'*60)
-
-for v in vals:
-    try:
-        result = x / v
-        print(result)
-    except TypeError as err:
-        print(err)
     except ZeroDivisionError as err:
         print(err)
-
-print('-' * 60)
-
-for v in vals:
-    try:
-        result = x / v
-        print(result)
-    except Exception as err:
+    except TypeError as err:
         print(err)
-        print(type(err).__name__)
-    else:
+    except (KeyError, IndexError) as err:
+        print("Huh??")
+    except: #  Exception as err:
+        #print("{}: {}".format(type(err).__name__, err))
+        result = float('Nan')
+        exit()
+    else:  # no exceptions
         pass
     finally:
         pass
+    print(result)
 
-
-print('-' * 60)

@@ -5,22 +5,31 @@ y = 10
 thing = 'Wankel rotary engine'
 
 result = x + y
-
 print(result)
+
+# PEMDAS
+
 print("wankel rotary engine", result, "engine")
-print(f"wankel {result} engine")
+print(f"wankel rotary engine {result} engine")
 print("wankel rotary engine {} engine".format(result))
-print(f"wankel {result} engine")
 
-#cat strings
-result = thing + thing
-print("result is", result)
-#doesnt work-- cant add string and ints
-#result = x + thing
-#print("result is", result)
+# result = thing + x
 
-#python owns class and break
-#class = 'Freshman'
-#break exits a loop
-#break = "10 AM"
+# print("result is", result)
+
+# class = 'Freshman'
+#
+# break = "10 AM"
+#
+
+
+
+
+
+
+
+
+
+
+
 

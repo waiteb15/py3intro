@@ -20,7 +20,7 @@ for x in range(5, 30, 5):  # <4>
     print(x, end=' ')
 print()
 
-print("range(10, 1, -1): ", end=' ')
+print("range(10, 0, -1): ", end=' ')
 for x in range(10, 0, -1):  # <5>
     print(x, end=' ')
 print()

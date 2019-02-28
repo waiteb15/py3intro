@@ -17,15 +17,22 @@ if re.search(pattern, s):  # <2>
     print("Found pattern.")  
 print()
 
-m = re.search(pattern, s)  # <3>
+m = re.search(pattern, s, re.I | re.X)  # <3>
+print(m)
 if m:
-    print("Found:", m.group()) # <4>
+    print(m.re, m.pos)
+    print("Found:", m.group(0), m.start(0), m.end()) # <4>
 print()
 
+# matches = [m1, m2, m3, m4]
+# for m in matches:
+#     print(m)
+
+# return a (virtual) list of match objects
 for m in re.finditer(pattern, s): # <5>
     print(m.group())
 print()
 
+# return a list of the text that match
 matches = re.findall(pattern, s)  # <6>
 print("matches:",  matches)
-    

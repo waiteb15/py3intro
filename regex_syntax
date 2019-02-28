@@ -1,0 +1,82 @@
+
+
+     pet     "pet"   "carpet"   "petunia"
+
+    p.t     pot pet put pit pat 'p t'  p,t  p:t
+
+    p\.t    app.txt
+
+    p\\t        "foo\\bar\\blah"
+
+    p[aeiou]t
+
+    p[^aeiou]t
+
+    [0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]
+
+    \d\d\d-\d\d-\d\d\d\d
+
+    \d [0-9]
+    \s [ \t\n\r\f\b]
+    \w [a-zA-Z0-9_]
+
+    [a-zA-Z]
+
+    \d{3}-\d{2}-\d{4}
+
+    p[aeiou]{2}t
+
+    p[aeiou]*t      p[aeiou]+t      p[aeiou]?t
+
+    p[aeiou]{0,}t   p[aeiou]{1,}t   p[aeiou]{0,1}t
+
+    pt pot poot poooooooooooooooooooooooot
+
+    pa*t
+
+    p.*e.*t      .*
+
+
+    p.t
+    p.*t
+
+    * + ?
+    {n}  {n,} {n,m}
+
+    [A-Z]\d{2,3}
+
+
+       CAPTURE
+    abc([a-z]+)
+
+    xxx(?:.....)yyy            non-capture group
+    xxx(?P<code>.....)yyy
+
+    ^p[aeiou]t  beg of text
+
+    \d{4}$   end of text
+
+      Aa qA
+      ^\d+$    ^\s*(\d+)\s*$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,30 +1,45 @@
 #!/usr/bin/env python
 
-fruits = ['watermelon', 'apple', 'mango', 'kiwi', 'apricot', 'lemon', 'guava']
+fruits = ["pomegranate", "  cherry", "apricot", "date", "apple",
+"lemon", "kiwi", "orange", "lime  ", "watermelon", "guava",
+"papaya", "fig", "pear", "banana", "tamarind", "persimmon",
+"elderberry", "peach", "  blueberry", "lychee", "grape" ]
 
 f0 = []
-
 for f in fruits:
     f0.append(f.upper())
+print("f0:", f0, '\n')
 
-print("f0",f0,'\n')
-
-
-# LIST COMPREHENSION [ EXP FOR VAR .. ITERABLE (OPT IN COND]
 f1 = [f.upper() for f in fruits]
-print("f1",f1,'\n')
+# [EXPR for VAR ... in ITERABLE if COND]
+print("f1:", f1, '\n')
 
-f2 = [f.upper() for f in fruits if f.lower().startswith('a')]
-print("f2",f2,'\n')
+f2 = [f.upper() for f in fruits if f.lower().startswith('p')]
+print("f2:", f2, '\n')
 
+f3 = [f for f in fruits if f.lower().startswith('p')]
+print("f3:", f3, '\n')
 
-f3 = [f for f in fruits if f.lower().startswith('a')]
-print("f3",f3,'\n')
+food = ['eggs', 'eggs', 'spam', 'spam', 'spam', 'spam',
+        'spam', 'spam', 'spam', 'spam', 'spam',
+        'spam', 'spam', 'spam', 'spam', 'spam',
+        'spam', 'spam', 'spam', 'spam', 'toast',
+        'cheeseburger', 'spam', 'spam', 'spam', ]
 
+food2 = [f for f in food if f != 'spam']
+print("food2:", food2, '\n')
 
-# find all foo and replace with bar and create a backup
-#perl -i.BAK -pe 's/foo/bar/g;' *.txt
+f4 = [f.upper().strip() for f in fruits]
+print("f4:", f4, '\n')
 
+def doit(x):
+    print("Doing things")
+    return x.upper().strip()[:3]
+
+f5 = [doit(f) for f in fruits]
+print("f5:", f5, '\n')
+
+#   perl -i.BAK -pe 's/foo/bar/g;' *.txt
 
 people = [
     ('Melinda', 'Gates', 'Gates Foundation'),
@@ -39,16 +54,8 @@ people = [
     ('Linus', 'Torvalds', 'Linux'),
 ]
 
-firsts = [p[0] for p in people]
-print(firsts)
+first_names = [p[0] for p in people]
+print("first_names:", first_names, '\n')
 
-names = [f"{p[0]} {p[1]}" for p in people]
-print(names)
-names = [f"{p[0]} {p[1]}" for p in people if p[1] > 'E']
-print(names)
-
-
-#THIS LOOKS VERY USEFUL
 names = [f"{p[0]} {p[1]}" for p in people if p[1][0] > 'E']
-print(names)
-
+print("names:", names, '\n')

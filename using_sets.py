@@ -1,36 +1,52 @@
 #!/usr/bin/env python
 
+john_countries = """Mexico
+Barbados
+China
+Canada
+UK
+Austria
+Spain
+Bulgaria
+Israel""".split('\n')
+
+clare_countries = """British Virgin Islands
+Denmark
+UK
+Spain
+Kenya
+Mexico
+Barbados
+Norway
+Sweden
+Canada""".split('\n')
 
 
-brian = """MEX
-USA
-CAN
-JAM
-SUI
-DOM
-GER""".split('\n')
+john = set(john_countries)
+clare = set(clare_countries)
 
-crystal = """USA
-CAN
-SUI
-GER""".split('\n')
+for i in range(1000000):
+    john.add('France')
 
-bc = set(brian)
-cc = set(crystal)
+print("both:", john & clare)
+print("either:", john | clare)
+print("just one:", john ^ clare)
+print("just John:", john - clare)
+print("just Clare:", clare - john)
 
+with open('DATA/breakfast.txt') as breakfast_in:
+    food = [b.rstrip() for b in breakfast_in]
+    food_set = set(food)
+    print(food_set)
+print()
 
-# INTERSECTION OF SETS
-print("both:", bc & cc)
-# unique union of both sets
-print("either:", bc | cc)
-
-print("just one:", bc ^ cc)
-print("just bri:", bc - cc )
-print("just cry", cc - bc)
+print(sorted(john))
+j = set(sorted(john))
+print(j)
 
 
-# would be an easy way to get a list of values without duplicates
-bcl = list(bc)
-print(bcl)
 
-#frozen set is likely the only for validation
+
+
+
+

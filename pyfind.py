@@ -1,14 +1,14 @@
 #!/usr/bin/env python
-
 import sys
 import re
 
-pattern = sys.argv[1]
-files = sys.argv[2:]
+# cmd line:   pyfind.py PATTERN FILE ....
+rx_pattern = re.compile(sys.argv[1])     # pattern
+file_list = sys.argv[2:]  # files
 
-for file in files:
-    print(f"\nSearching for {pattern} in {file}\n")
-    with open(file) as file_in:
-        for line in file_in:
-            if re.search(pattern, line, re.I):
-                print(line.rstrip())
+for file_name in file_list:
+    with open(file_name) as file_in:
+        for i, line in enumerate(file_in, 1):
+            if rx_pattern.search(line):
+                print(f"{i:6d} {line.rstrip()}")
+    print("====")

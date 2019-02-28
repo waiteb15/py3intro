@@ -12,5 +12,3 @@ for file in files:
         for line in file_in:
             if re.search(pattern, line, re.I):
                 print(line.rstrip())
-
-

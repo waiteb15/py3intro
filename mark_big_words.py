@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 import re
 
-
 rx_code = re.compile(r'(?P<bigword>\b[A-Z]{8,}\b)', re.I)
-
 
 def update_code(m):
     word = m.group('bigword')
